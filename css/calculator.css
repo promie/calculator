@@ -1,0 +1,133 @@
+@import url(https://fonts.googleapis.com/css?family=Nova+Mono);
+
+*{
+  font-family: 'Nova Mono';
+}
+body{
+  background-color: black;
+}
+
+.github{
+    font-size: 30px;
+    text-decoration: none;
+    color: white;
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+.github:hover{
+    font-size: 35px;
+    text-decoration: none;
+    color:white;
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+
+
+a{
+  text-decoration:none;
+}
+
+a:hover{
+  background:#008870;
+  text-decoration: none;
+}
+#MainBox{
+  position:relative;
+}
+#AltBox{
+  position:absolute;
+  right:0; left: 0; 
+  margin:auto; margin-bottom:1em;
+  width: 330px; height: auto;
+  background-color: black;
+  border-radius: 10px;
+  padding: 1em;
+  box-shadow: 0px 0px 8px black;
+}
+.marca{
+  text-align: right;
+  color:white;
+  font-size: 12px;
+  margin-top: 0;
+  text-transform: uppercase;
+}
+.Shine{
+  position:absolute;
+  z-index:3;
+  width:100%;
+  height:40px;
+  background:rgba(255,255,255,0.2);
+}
+.Screen{
+  position:relative;
+  width:100%; height: 80px;
+  background-color:#3498db;
+  box-shadow: inset 0px 0px 20px #34495e;
+}
+.igual{
+  margin-bottom:-1em;
+  background-color: #008845;
+  width:120px;
+  border-radius:10px;
+  
+}
+
+.igual:hover{
+  background-color: #008845;
+  text-decoration: none;
+  
+}
+#numbers{
+  position:absolute;
+  z-index: 4;
+  height:100%;
+  width:100%;
+  border:none;
+  background:transparent;
+  font-size: 48px;
+  padding:10px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;   
+  box-sizing: border-box;     
+  color: rgba(2,2,2,0.7);
+  text-align: right;
+  
+}
+ul{
+  position:relative;
+  list-style:none;
+  padding:1em;
+}
+ul > li{
+  display:inline-block;
+}
+ul > li > a{
+  display:block;
+  text-align:center;
+  line-height: 60px;
+  color:white;
+  width:60px; height:60px;
+  font-size:26px;
+  border-radius:100%;
+  background:#008845;
+  margin:10px 0 10px 0;
+}
+.author{
+  font-size:11Px;
+  margin-top: -20px;
+  padding-bottom:10px;
+  color:white;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#on-off{
+    background-color: lightgreen;
+    color: black;
+}
+
+#ac, #ce, #equal{
+    background-color: red;
+}
