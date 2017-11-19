@@ -41,33 +41,33 @@
                <div class="TextScreen">
                    <input type="text"
                           id="numbers"
+                          maxlength="10"
                           value=""/>
                </div>
           </div>
           <ul>
-            <li><a id="on-off">ON</a></li>
-            <li><a id="ac">AC</a></li>
-            <li><a id="ce">CE</a></li>
-            <li><a id="divide">÷</a></li>
-            <li><a id="seven">7</a></li>
-            <li><a id="eight">8</a></li>
-            <li><a id="nine">9</a></li>
-            <li><a id="multiply">x</a></li>
-            <li><a id="four">4</a></li>
-            <li><a id="five">5</a></li>
-            <li><a id="six">6</a></li>
-            <li><a id="minus">-</a></li>
-            <li><a id="one">1</a></li>
-            <li><a id="two">2</a></li>
-            <li><a id="three">3</a></li>
-            <li><a id="plus">+</a></li>
-            <li><a id="zero">0</a></li>
-            <li><a id="dot">.</a></li>
-            <li><a class="igual" id="equal">=</a></li>
+            <li><a id="on-off" onclick="">ON</a></li>
+            <li><a id="ac" onclick="clearScreen()">AC</a></li>
+            <li><a id="ce" onclick="deleteLastVal()">CE</a></li>
+            <li><a id="divide" onclick="displayScreen('/')">÷</a></li>
+            <li><a id="number" onclick="displayScreen(7)">7</a></li>
+            <li><a id="number" onclick="displayScreen(8)">8</a></li>
+            <li><a id="number" onclick="displayScreen(9)">9</a></li>
+            <li><a id="operator" onclick="displayScreen('*')">x</a></li>
+            <li><a id="number" onclick="displayScreen(4)">4</a></li>
+            <li><a id="number" onclick="displayScreen(5)">5</a></li>
+            <li><a id="number" onclick="displayScreen(6)">6</a></li>
+            <li><a id="operator" onclick="displayScreen('-')">-</a></li>
+            <li><a id="number" onclick="displayScreen(1)">1</a></li>
+            <li><a id="number" onclick="displayScreen(2)">2</a></li>
+            <li><a id="number" onclick="displayScreen(3)">3</a></li>
+            <li><a id="operator" onclick="displayScreen('+')">+</a></li>
+            <li><a id="number" onclick="displayScreen(0)">0</a></li>
+            <li><a id="dot" onclick="displayScreen('.')">.</a></li>
+            <li><a class="igual" id="equal" onclick="total()">=</a></li>
           </ul>
           <p class="author">A Project by P Yutasane</p>
         </div>
-        
       </div>
 
 		<!--jQuery-->
