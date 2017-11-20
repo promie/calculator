@@ -46,25 +46,25 @@
                </div>
           </div>
           <ul>
-            <li><a id="on-off" onclick="">ON</a></li>
+            <li><a id="on-off" onclick="onOFF()">ON</a></li>
             <li><a id="ac" onclick="clearScreen()">AC</a></li>
             <li><a id="ce" onclick="deleteLastVal()">CE</a></li>
-            <li><a id="divide" onclick="displayScreen('/')">÷</a></li>
-            <li><a id="number" onclick="displayScreen(7)">7</a></li>
-            <li><a id="number" onclick="displayScreen(8)">8</a></li>
-            <li><a id="number" onclick="displayScreen(9)">9</a></li>
-            <li><a id="operator" onclick="displayScreen('*')">x</a></li>
-            <li><a id="number" onclick="displayScreen(4)">4</a></li>
-            <li><a id="number" onclick="displayScreen(5)">5</a></li>
-            <li><a id="number" onclick="displayScreen(6)">6</a></li>
-            <li><a id="operator" onclick="displayScreen('-')">-</a></li>
-            <li><a id="number" onclick="displayScreen(1)">1</a></li>
-            <li><a id="number" onclick="displayScreen(2)">2</a></li>
-            <li><a id="number" onclick="displayScreen(3)">3</a></li>
-            <li><a id="operator" onclick="displayScreen('+')">+</a></li>
-            <li><a id="number" onclick="displayScreen(0)">0</a></li>
-            <li><a id="dot" onclick="displayScreen('.')">.</a></li>
-            <li><a class="igual" id="equal" onclick="total()">=</a></li>
+            <li><a class="divide" onclick="handleOperator('/')">÷</a></li>
+            <li><a class="number" onclick="handleNumber(7)">7</a></li>
+            <li><a class="number" onclick="handleNumber(8)">8</a></li>
+            <li><a class="number" onclick="handleNumber(9)">9</a></li>
+            <li><a class="operator" onclick="handleOperator('*')">x</a></li>
+            <li><a class="number" onclick="handleNumber(4)">4</a></li>
+            <li><a class="number" onclick="handleNumber(5)">5</a></li>
+            <li><a class="number" onclick="handleNumber(6)">6</a></li>
+            <li><a class="operator" onclick="handleOperator('-')">-</a></li>
+            <li><a class="number" onclick="handleNumber(1)">1</a></li>
+            <li><a class="number" onclick="handleNumber(2)">2</a></li>
+            <li><a class="number" onclick="handleNumber(3)">3</a></li>
+            <li><a class="operator" onclick="handleOperator('+')">+</a></li>
+            <li><a class="number" onclick="handleNumber(0)">0</a></li>
+            <li><a class="dot" onclick="handleNumber('.')">.</a></li>
+            <li><a class="igual equal" onclick="total()">=</a></li>
           </ul>
           <p class="author">A Project by P Yutasane</p>
         </div>
