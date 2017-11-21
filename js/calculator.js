@@ -35,15 +35,16 @@ const handleNumber = (number) => {
         screenValue += number
         displayScreen(screenValue)
     }
+
 }
 
 const total = () => {
     calculator.push(screenValue)
-    displayScreen(eval(calculator.join('')));
+    const total = eval(calculator.join(''))
+    displayScreen(total);
     
-    calculator = [];
-    screenValue = document.getElementById('numbers').value;
-
+    calculator = [total];
+    screenValue = '';
 }
 
 const resetButton = () =>{
