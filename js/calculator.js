@@ -30,6 +30,7 @@ const handleOperator = (operator) => {
 }
 
 const handleNumber = (number) => {
+
     if(screenValue.length < 10 && status === 'ON'){
         screenValue += number
         displayScreen(screenValue)
@@ -49,15 +50,6 @@ const resetButton = () =>{
     if(status === 'ON'){
         screenValue = '';
         calculator = [];
-        displayScreen(0);
-        status = 'ON';
-    }
-}
-
-const deleteLastVal = () =>{
-
-    if(status === 'ON'){
-        screenvalue='';
         displayScreen(0);
         status = 'ON';
     }
