@@ -18,7 +18,6 @@ const onOFF = () =>{
     
 }
 
-
 const displayScreen = (str) => {
     document.getElementById('numbers').value = str
 }
@@ -40,13 +39,10 @@ const handleNumber = (number) => {
 const total = () => {
     calculator.push(screenValue)
     displayScreen(eval(calculator.join('')))
-
-    console.log(calculator);
-
+    screenValue = '';
 }
 
 const clearScreen = () =>{
-    
     screenValue = '';
     calculator = [];
     displayScreen(0);
@@ -54,14 +50,12 @@ const clearScreen = () =>{
 }
 
 const deleteLastVal = () =>{
-    
     const displayValue = document.getElementById('numbers').value;
     const len = displayValue.length - 1;
     const newValue = displayValue.substring(0, len);
 
     displayScreen(newValue);
     screenValue = '';
-  
 }
 
 
