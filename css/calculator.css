@@ -123,3 +123,8 @@ ul > li > a{
 #ac, #ce, #equal{
     background-color: red;
 }
+
+#on-off{
+  background-color: yellow;
+  color: black;
+}

@@ -40,13 +40,17 @@ const handleNumber = (number) => {
 const total = () => {
     calculator.push(screenValue)
     displayScreen(eval(calculator.join('')))
+
+    console.log(calculator);
+
 }
 
 const clearScreen = () =>{
     
-    screenValue = 0;
-    calculator = [0];
-    displayScreen(screenValue);
+    screenValue = '';
+    calculator = [];
+    displayScreen(0);
+    status = 'ON';
 }
 
 const deleteLastVal = () =>{
