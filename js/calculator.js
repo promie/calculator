@@ -1,5 +1,22 @@
 let screenValue = ""
 let calculator = []
+let status = 'OFF';
+
+const onOFF = () =>{
+    
+    if(status === 'OFF'){
+        displayScreen(0);
+        status = 'ON';
+        document.getElementById('on-off').innerHTML = 'OFF';
+    }else{
+        status = 'OFF';
+        document.getElementById('on-off').innerHTML = 'ON';
+        displayScreen('');
+        screenValue = '';
+        calculator = [];
+    }
+    
+}
 
 
 const displayScreen = (str) => {
@@ -7,14 +24,14 @@ const displayScreen = (str) => {
 }
 
 const handleOperator = (operator) => {
-    if(screenValue.length < 10){
+    if(screenValue.length < 10 && status === 'ON'){
         calculator.push(screenValue, operator)
         screenValue = ""    
     }
 }
 
 const handleNumber = (number) => {
-    if(screenValue.length < 10){
+    if(screenValue.length < 10 && status === 'ON'){
         screenValue += number
         displayScreen(screenValue)
     }
@@ -27,9 +44,9 @@ const total = () => {
 
 const clearScreen = () =>{
     
-    document.getElementById('numbers').value = '';
-    screenValue = '';
-
+    screenValue = 0;
+    calculator = [0];
+    displayScreen(screenValue);
 }
 
 const deleteLastVal = () =>{
@@ -38,10 +55,12 @@ const deleteLastVal = () =>{
     const len = displayValue.length - 1;
     const newValue = displayValue.substring(0, len);
 
-    document.getElementById('numbers').value = newValue;
+    displayScreen(newValue);
     screenValue = '';
-    
+  
 }
+
+
 
 
 
