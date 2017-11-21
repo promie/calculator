@@ -38,24 +38,29 @@ const handleNumber = (number) => {
 
 const total = () => {
     calculator.push(screenValue)
-    displayScreen(eval(calculator.join('')))
-    screenValue = '';
+    displayScreen(eval(calculator.join('')));
+    
+    calculator = [];
+    screenValue = document.getElementById('numbers').value;
+
 }
 
-const clearScreen = () =>{
-    screenValue = '';
-    calculator = [];
-    displayScreen(0);
-    status = 'ON';
+const resetButton = () =>{
+    if(status === 'ON'){
+        screenValue = '';
+        calculator = [];
+        displayScreen(0);
+        status = 'ON';
+    }
 }
 
 const deleteLastVal = () =>{
-    const displayValue = document.getElementById('numbers').value;
-    const len = displayValue.length - 1;
-    const newValue = displayValue.substring(0, len);
 
-    displayScreen(newValue);
-    screenValue = '';
+    if(status === 'ON'){
+        screenvalue='';
+        displayScreen(0);
+        status = 'ON';
+    }
 }
 
 
