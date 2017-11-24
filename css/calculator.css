@@ -4,7 +4,9 @@
   font-family: 'Nova Mono';
 }
 body{
-  background-color: black;
+  background-image: url('https://wallpapercave.com/wp/rUSFi40.jpg');
+  background-repeat: none;
+  background-size: cover;
 }
 
 .github{
@@ -38,15 +40,15 @@ a:hover{
   position:absolute;
   right:0; left: 0; 
   margin:auto; margin-bottom:1em;
-  width: 330px; height: auto;
-  background-color: black;
+  width: 330px; height: 550px;
+  background-color: white;
   border-radius: 10px;
   padding: 1em;
-  box-shadow: 0px 0px 8px black;
+  box-shadow: 0px 0px 8px white;
 }
 .marca{
   text-align: right;
-  color:white;
+  color:black;
   font-size: 12px;
   margin-top: 0;
   text-transform: uppercase;
@@ -115,7 +117,7 @@ ul > li > a{
 .author{
   font-size:9px;
   margin-top: -20px;
-  color:white;
+  color:black;
   text-align: center;
   text-transform: uppercase;
 }
@@ -125,6 +127,6 @@ ul > li > a{
 }
 
 #on-off{
-  background-color: yellow;
+  background-color: blue;
   color: black;
 }
