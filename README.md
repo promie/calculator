@@ -14,4 +14,4 @@ Check out the completed projected - [Javascript Calculator](https://promie.githu
 
 ### Preview
 
-![alt text](https://github.com/promie/calculator/blob/master/img/preview.PNG "Main App")
+![alt text](https://github.com/promie/calculator/blob/master/img/preview2.PNG "Main App")
