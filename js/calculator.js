@@ -26,6 +26,8 @@ const handleOperator = (operator) => {
     if(screenValue.length < 10 && status === 'ON'){
         calculator.push(screenValue, operator)
         screenValue = ''    
+    }else{
+        alert('Please turn on the calculator');
     }
 }
 
@@ -34,6 +36,8 @@ const handleNumber = (number) => {
     if(screenValue.length < 10 && status === 'ON'){
         screenValue += number
         displayScreen(screenValue)
+    }else{
+        alert('Please turn on the calculator');
     }
 
 }
@@ -61,6 +65,8 @@ const resetButton = () =>{
         calculator = [];
         displayScreen(0);
         status = 'ON';
+    }else{
+        alert('Please turn on the calculator');
     }
 }
 

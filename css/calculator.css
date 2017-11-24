@@ -9,20 +9,18 @@ body{
   background-size: cover;
 }
 
-.github{
-    font-size: 25px;
-    text-decoration: none;
-    color: white;
-    margin-top: 10px;
-    text-decoration: none;
+/*=====FORMATTING=====*/
+#MainBox{
+  position:relative;
 }
 
-.github:hover{
-    font-size: 25px;
-    text-decoration: none;
-    color:white;
-    margin-top: 10px;
-    text-decoration: none;
+#ac, #ce, #equal{
+  background-color: red;
+}
+
+#on-off{
+background-color: blue;
+color: white;
 }
 
 a{
@@ -33,19 +31,7 @@ a:hover{
   background:#008870;
   text-decoration: none;
 }
-#MainBox{
-  position:relative;
-}
-#AltBox{
-  position:absolute;
-  right:0; left: 0; 
-  margin:auto; margin-bottom:1em;
-  width: 330px; height: 550px;
-  background-color: white;
-  border-radius: 10px;
-  padding: 1em;
-  box-shadow: 0px 0px 8px white;
-}
+
 .marca{
   text-align: right;
   color:black;
@@ -53,6 +39,7 @@ a:hover{
   margin-top: 0;
   text-transform: uppercase;
 }
+
 .Shine{
   position:absolute;
   z-index:3;
@@ -71,14 +58,42 @@ a:hover{
   background-color: #008845;
   width:120px;
   border-radius:10px;
-  
 }
 
 .igual:hover{
   background-color: #008845;
-  text-decoration: none;
-  
+  text-decoration: none;  
 }
+
+/*=====HEAD SECTION=====*/
+.github{
+    font-size: 25px;
+    text-decoration: none;
+    color: white;
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+.github:hover{
+    font-size: 25px;
+    text-decoration: none;
+    color:white;
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+/*=====MAIN SECTION=====*/
+#AltBox{
+  position:absolute;
+  right:0; left: 0; 
+  margin:auto; margin-bottom:1em;
+  width: 330px; height: 550px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 1em;
+  box-shadow: 0px 0px 8px white;
+}
+
 #numbers{
   position:absolute;
   z-index: 4;
@@ -92,9 +107,9 @@ a:hover{
   -moz-box-sizing: border-box;   
   box-sizing: border-box;     
   color: rgba(2,2,2,0.7);
-  text-align: right;
-  
+  text-align: right;  
 }
+
 ul{
   position:relative;
   list-style:none;
@@ -114,6 +129,7 @@ ul > li > a{
   background:#008845;
   margin:10px 0 10px 0;
 }
+
 .author{
   font-size:9px;
   margin-top: -20px;
@@ -122,11 +138,4 @@ ul > li > a{
   text-transform: uppercase;
 }
 
-#ac, #ce, #equal{
-    background-color: red;
-}
 
-#on-off{
-  background-color: blue;
-  color: black;
-}
